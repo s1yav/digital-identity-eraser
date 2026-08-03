@@ -1,10 +1,10 @@
-# Digital Pumice 🪨
+# Digital Identity Eraser 🛡️
 
 > **Continuous Automated Personal Data Scrubbing & Opt-Out Engine**
 
-`digital-pumice` is an open-source, privacy-first automated tool designed to continuously discover, opt-out, and scrub your sensitive Personally Identifiable Information (PII)—including home addresses, phone numbers, email aliases, family associations, and public record markers—from data brokers, people-search websites, and web scrapers.
+`digital-identity-eraser` is an open-source, privacy-first automated tool designed to continuously discover, opt-out, and scrub your sensitive Personally Identifiable Information (PII)—including home addresses, phone numbers, email aliases, family associations, and public record markers—from data brokers, people-search websites, and web scrapers.
 
-Just as a pumice stone wears away rough surfaces, **Digital Pumice** continuously smooths away your online privacy footprint, ensuring that once your data is removed, it stays removed.
+**Digital Identity Eraser** continuously erases away your online privacy footprint, ensuring that once your data is removed, it stays removed.
 
 ---
 
@@ -12,7 +12,7 @@ Just as a pumice stone wears away rough surfaces, **Digital Pumice** continuousl
 
 - **Continuous PII Monitoring**: Constantly scans data broker networks, public registries, and people-search engines for new or re-listed entries containing your address, phone number, or name.
 - **Automated Opt-Out Engine**: Programmatically submits legal opt-out and removal requests (under CCPA, GDPR, CPRA, and state privacy acts) to dozens of major data aggregators.
-- **Re-listing Prevention Guard**: Data brokers frequently re-acquire public records and recreate profiles. Digital Pumice runs scheduled background audits to trigger fresh removal requests whenever data reappears.
+- **Re-listing Prevention Guard**: Data brokers frequently re-acquire public records and recreate profiles. Digital Identity Eraser runs scheduled background audits to trigger fresh removal requests whenever data reappears.
 - **Zero-Knowledge Local Hashing**: Your identity profile (addresses, phone numbers, SSN fragments) is stored strictly locally in encrypted, zero-knowledge storage. Scans use privacy-preserving match tokens.
 - **Verification & Audit Ledger**: Tracks the exact status of every opt-out request (Pending, Submitted, Confirmed, Rejected, Verified Removed) with clear audit trails.
 
@@ -28,7 +28,7 @@ Just as a pumice stone wears away rough surfaces, **Digital Pumice** continuousl
                                        |
                                        v
                        +---------------+---------------+
-                       |   Digital Pumice Core Engine  |
+                       |Digital Identity Eraser Engine |
                        +---------------+---------------+
                                        |
          +-----------------------------+-----------------------------+
@@ -71,8 +71,8 @@ Just as a pumice stone wears away rough surfaces, **Digital Pumice** continuousl
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/digital-pumice.git
-cd digital-pumice
+git clone https://github.com/s1yav/digital-identity-eraser.git
+cd digital-identity-eraser
 
 # Install dependencies (Node environment example)
 npm install
@@ -106,23 +106,23 @@ settings:
 
 ```bash
 # Run a dry-run privacy exposure scan
-npx digital-pumice scan
+npx digital-identity-eraser scan
 
 # Execute opt-out submission across all matched brokers
-npx digital-pumice scrub
+npx digital-identity-eraser scrub
 
 # Launch continuous monitoring daemon
-npx digital-pumice monitor --daemon
+npx digital-identity-eraser monitor --daemon
 
 # Generate a removal verification summary report
-npx digital-pumice report --format markdown
+npx digital-identity-eraser report --format markdown
 ```
 
 ---
 
 ## 🔒 Security & Privacy Guarantees
 
-- **No Remote Telemetry**: `digital-pumice` does not send your data to any centralized server. All requests originate directly from your client network interface.
+- **No Remote Telemetry**: `digital-identity-eraser` does not send your data to any centralized server. All requests originate directly from your client network interface.
 - **Local Vault Encryption**: Local config files are encrypted using AES-256-GCM derived from your personal master passphrase.
 - **Open & Auditable**: Every request header, payload, and API call is fully open source and transparent.
 
@@ -137,6 +137,3 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<!-- Engine Status: Active - July 24, 2026 -->
-
